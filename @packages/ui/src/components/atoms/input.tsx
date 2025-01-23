@@ -15,7 +15,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
         const inputElement = (
             <div className="relative">
-                // 라벨이 있으면
+                {/* 라벨이 있으면 */}
                 {label && (
                     <Label className="block text-sm font-medium text-gray-700">
                         {label}
@@ -35,7 +35,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
                     onBlur={() => setIsFocused(false)}
                     {...props}
                 />
-                // 에러가 있으면
+                {/* 에러가 있으면 */}
                 {error && !isFocused && (
                     <div className="absolute inset-0 flex items-center justify-center w-full h-full p-1 text-xs text-red-500 bg-red-50/95 pointer-events-none text-ellipsis">
                         {error}
