@@ -55,8 +55,7 @@ export const Default: Story = {
 export const WithError: Story = {
     args: {
         type: 'text',
-        className: 'border-red-500',
-        placeholder: '에러 상태',
+        error: '유효하지 않은 이메일 주소입니다',
     },
 };
 
@@ -68,11 +67,17 @@ export const Password: Story = {
 };
 
 export const WithLabel: Story = {
-    render: () => (
-        <div className="grid w-full max-w-sm items-center gap-1.5">
-            <label htmlFor="email">이메일</label>
-            {/* <Label htmlFor="email">Email</Label> */}
-            <Input type="email" id="email" placeholder="이메일을 입력하세요" />
-        </div>
-    ),
+    args: {
+        type: 'text',
+        placeholder: '',
+        label: 'E-Mail',
+    },
+
+    // render: () => (
+    //     <div className="grid w-full max-w-sm items-center gap-1.5">
+    //         <label htmlFor="email">이메일</label>
+    //         {/* <Label htmlFor="email">Email</Label> */}
+    //         <Input type="email" id="email" placeholder="이메일을 입력하세요" />
+    //     </div>
+    // ),
 };
