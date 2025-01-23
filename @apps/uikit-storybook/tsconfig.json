@@ -1,0 +1,23 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@packages/*": ["../../@packages/*"],
+            "@ui/*": ["../../@packages/ui/src/*"],
+            "@ui/atoms": ["../../@packages/ui/src/components/atoms/index.ts"],
+            "@ui/molecules": [
+                "../../@packages/ui/src/components/molecules/index.ts"
+            ],
+            "@ui/organisms": [
+                "../../@packages/ui/src/components/organisms/index.ts"
+            ],
+            "@ui/templates": [
+                "../../@packages/ui/src/components/templates/index.ts"
+            ],
+            "@ui/pages": ["../../@packages/ui/src/components/atoms/pages.ts"]
+        }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+    "exclude": ["node_modules"]
+}
