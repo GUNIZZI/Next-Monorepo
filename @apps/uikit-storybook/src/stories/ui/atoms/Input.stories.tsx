@@ -15,8 +15,32 @@ const meta = {
     argTypes: {
         type: {
             control: 'select',
-            options: ['text', 'password', 'email', 'number', 'tel', 'search'],
+            options: [
+                'text',
+                'password',
+                'email',
+                'number',
+                'tel',
+                'search',
+                'file',
+            ],
             description: '입력 필드의 타입을 지정합니다',
+        },
+        variant: {
+            control: 'select',
+            options: [
+                'default',
+                'destructive',
+                'outline',
+                'secondary',
+                'ghost',
+            ],
+            description: '입력 필드의 스타일 변형을 지정합니다',
+            defaultValue: 'default',
+        },
+        size: {
+            control: 'select',
+            options: ['default', 'sm', 'lg', 'icon'],
         },
         placeholder: {
             control: 'text',
@@ -39,7 +63,7 @@ const meta = {
             description: '필수 입력 여부를 지정합니다',
         },
     },
-    args: { onClick: fn() },
+    // args: { onClick: fn() },
 } satisfies Meta<typeof Input>;
 
 export default meta;

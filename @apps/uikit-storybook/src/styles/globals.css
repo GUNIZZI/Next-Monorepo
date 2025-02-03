@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        /* 기본 UI 컬러 */
+        --sb-color-primary: #1ea7fd;
+        --sb-color-secondary: #ff4785;
+        --sb-color-positive: #66bf3c;
+        --sb-color-negative: #ff4400;
+        --sb-color-warning: #e69d00;
+
+        /* 텍스트 컬러 */
+        --sb-color-text: #333333;
+        --sb-color-subtext: #666666;
+
+        /* 배경 컬러 */
+        --sb-background-main: #ffffff;
+        --sb-background-secondary: #f6f9fc;
+
+        /* 보더 컬러 */
+        --sb-border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-mode='dark'] {
+        /* 다크모드 UI 컬러 */
+        --sb-color-text: #ffffff;
+        --sb-color-subtext: #999999;
+        --sb-background-main: #333333;
+        --sb-background-secondary: #1b1b1b;
+        --sb-border-color: rgba(255, 255, 255, 0.1);
+    }
+}

@@ -1,10 +1,12 @@
+@import './themes/index.css';
+@import './fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer base {
     :root {
@@ -34,7 +36,7 @@ body {
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
     }
-    .dark {
+    [data-mode='dark'] {
         --background: 0 0% 3.9%;
         --foreground: 0 0% 98%;
         --card: 0 0% 3.9%;

@@ -71,7 +71,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ['class'],
+    darkMode: ['class', '[data-theme="dark"]'],
     content: [],
     theme: {
         container: {
@@ -82,6 +82,9 @@ module.exports = {
             },
         },
         extend: {
+            fontFamily: {
+                sans: ['Pretendard Variable', 'sans-serif'],
+            },
             colors: {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',

@@ -50,7 +50,7 @@ export const Default: Story = {
 
 export const WithICON = {
     args: {
-        variant: 'secondary',
+        // variant: 'secondary',
         size: 'default',
         children: (
             <>

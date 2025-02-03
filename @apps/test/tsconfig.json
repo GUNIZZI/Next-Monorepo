@@ -3,6 +3,7 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
+            "@/*": ["./src/*"],
             "@packages/*": ["../../@packages/*"],
             "@ui/*": ["../../@packages/ui/src/*"],
             "@ui/atoms": ["../../@packages/ui/src/components/atoms/index.ts"],

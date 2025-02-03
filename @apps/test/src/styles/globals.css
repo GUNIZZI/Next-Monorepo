@@ -1,0 +1,48 @@
+@tailwind base;
+
+@layer base {
+    :root[data-theme='custom'] {
+        --background: 276 0% 100%;
+        --foreground: 276 0% 10%;
+        --card: 276 0% 100%;
+        --card-foreground: 276 0% 15%;
+        --popover: 276 0% 100%;
+        --popover-foreground: 276 95% 10%;
+        --primary: 276 100% 84%;
+        --primary-foreground: 0 0% 0%;
+        --secondary: 276 10% 90%;
+        --secondary-foreground: 0 0% 0%;
+        --muted: 238 10% 95%;
+        --muted-foreground: 276 0% 40%;
+        --accent: 238 10% 90%;
+        --accent-foreground: 276 0% 15%;
+        --destructive: 0 50% 50%;
+        --destructive-foreground: 276 0% 100%;
+        --border: 276 20% 82%;
+        --input: 276 20% 50%;
+        --ring: 276 100% 84%;
+        --radius: 0.3rem;
+    }
+    [data-theme='custom'][data-mode='dark'] {
+        --background: 276 10% 10%;
+        --foreground: 276 0% 100%;
+        --card: 276 0% 10%;
+        --card-foreground: 276 0% 100%;
+        --popover: 276 10% 5%;
+        --popover-foreground: 276 0% 100%;
+        --primary: 276 100% 84%;
+        --primary-foreground: 0 0% 0%;
+        --secondary: 276 10% 20%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 238 10% 25%;
+        --muted-foreground: 276 0% 65%;
+        --accent: 238 10% 25%;
+        --accent-foreground: 276 0% 95%;
+        --destructive: 0 50% 50%;
+        --destructive-foreground: 276 0% 100%;
+        --border: 276 20% 50%;
+        --input: 276 20% 50%;
+        --ring: 276 100% 84%;
+        --radius: 0.3rem;
+    }
+}
